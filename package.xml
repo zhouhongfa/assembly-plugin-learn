@@ -1,0 +1,18 @@
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">
+    <id>package.xml</id>
+    <formats> <!--指定程序集的格式。通常最好通过目标参数而不是此处指定格式。-->
+        <format>dir</format> <!--以目录格式导出-->
+        <format>tar.gz</format><!--以tar.gz格式导出-->
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory> <!--在最终存档中包含基本目录。-->
+    <fileSets> <!--fileSet允许将文件组包含到程序集中。-->
+        <fileSet>
+            <directory>target/</directory><!--目录-->
+            <includes>
+                <include>assemblypluginlearn-1.0-SNAPSHOT.jar</include> <!--包含的文件-->
+            </includes>
+            <outputDirectory>output</outputDirectory> <!--输出目录，默认与原目录一样，即 target-->
+        </fileSet>
+    </fileSets>
+</assembly>
