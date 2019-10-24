@@ -1,6 +1,6 @@
 <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">
-    <id>package.xml</id>
+    <id>package.xml</id><!--要与descriptor中配置的一致-->
     <formats> <!--指定程序集的格式。通常最好通过目标参数而不是此处指定格式。-->
         <format>dir</format> <!--以目录格式导出-->
         <format>tar.gz</format><!--以tar.gz格式导出-->

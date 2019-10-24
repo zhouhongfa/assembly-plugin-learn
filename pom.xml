@@ -15,9 +15,16 @@
                 <version>3.1.1</version>
                 <configuration>
                     <finalName>assemblPluginStudy</finalName>
-                    <descriptors>
+                    <descriptors><!--自定义描述符文件-->
                         <descriptor>package.xml</descriptor>
                     </descriptors>
+
+                    <!--不将 assemblyId加到生成的名称上-->
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <!--预定义的描述符使用-->
+                    <!--                    <descriptorRefs>
+                                            <descriptorRef>jar-with-dependencies</descriptorRef>
+                                        </descriptorRefs>-->
                 </configuration>
                 <executions>
                     <execution>
